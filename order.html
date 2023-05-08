@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Order Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<br>
+    <header>
+        <div class="navbar">
+        <h2 class="logo">TAMBAL EKSPRESS</h2>
+        <nav class="links">
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Services</a>
+            <a href="./index.html">About</a>
+            <a href="./index.html">Contact</a>
+        </nav>
+        <a href="#"><button class="btnLogin-popup">Get Started</button></a>
+        <div class="toggle_btn">
+            <i class="fa fa-bars"></i>
+        </div>
+        </div>
+        
+        <div class="dropdown_menu">
+          <nav class="nav_menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Services</a></li>
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./index.html">Contact</a></li>
+          </nav>
+          <a href="#" class="btnLogin-popup">Get Started</a>
+        </div>
+    </header>
+
+    <section id="Home">
+        <img src="Logo-01.png" alt="">
+        <h3>Maaf, kami masih belum buka.</h3>
+        <h3> Datang lagi di lain hari ya.</h3><br>
+        <a href="./index.html"><button class="btnOrder-popup">Home</button></a>
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function(){
+          dropdownMenu.classList.toggle('open')
+          const isOpen = dropdownMenu.classList.contains('open')
+        
+          toggleBtnIcon.classList = isOpen
+          ? 'fa fa-times'
+          : 'fa fa-bars'
+        }
+    </script>
+</body>
+</html>
