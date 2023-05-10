@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <title>Tambal Ekspress</title>
+    <title>Bengkel Ekspress</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <div class="navbar">
-        <h2 class="logo">TAMBAL EKSPRESS</h2>
+        <a href="#" class="logo">TAMBAL EKSPRESS</a>
         <nav class="links">
             <a href="#Home">Home</a>
             <a href="#Services">Services</a>
@@ -154,11 +154,11 @@
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropdownMenu = document.querySelector('.dropdown_menu')
-  
+        
         toggleBtn.onclick = function(){
           dropdownMenu.classList.toggle('open')
           const isOpen = dropdownMenu.classList.contains('open')
-  
+
           toggleBtnIcon.classList = isOpen
           ? 'fa fa-times'
           : 'fa fa-bars'
